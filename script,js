@@ -9,7 +9,7 @@ let quizAnswers = document.getElementById('quiz-answers');
 let answerButtons = document.getElementsByClassName('answer-button');
 let answerMessage = document.getElementById('answer-message');
 let inputField = document.getElementById('input-field');
-let initials = document.getElementById('initials');
+let initials = document.getElementById('last-name');
 let submitButton = document.getElementById('submit-button');
 
 
@@ -118,7 +118,7 @@ function endGame() {
     title.setAttribute('class', 'h2');
     text.setAttribute('style', 'border-top: 0');
     text.removeAttribute('class');
-    text.textContent = 'Your final score is ' + score + '. Enter your initials to see the high scores!';
+    text.textContent = 'Your final score is ' + score + '. Enter your last name to see the high scores!';
     inputField.style.display = 'block';
 
     
@@ -140,7 +140,7 @@ function storeHighScore(event) {
     
     } else {
         newScore = {
-            userName: initials.value.trim(),
+            userName: last-name.value.trim(),
             userScore: score
         };
         scoreArray.push(newScore);

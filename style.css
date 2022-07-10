@@ -90,7 +90,7 @@ li {
     display: none;
 }
 
-#initials {
+#last-name {
     margin: 0 0 0 15px;
 }
 
@@ -108,7 +108,7 @@ body:not(.user-is-tabbing) textarea:focus {
   }
 
 @media screen and (max-width: 470px) {
-    #initials {
+    #last-name {
         display: block;
         margin: 15px 0;
     }
